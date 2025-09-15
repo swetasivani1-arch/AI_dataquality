@@ -1,0 +1,2 @@
+table_name,total_rows,total_columns,completeness_violations,uniqueness_violations,datatype_violations,categorical_skew_violations,special_char_violations,casing_violations,regex_anomaly_violations,affected_columns,total_violations
+academy_data,109,3,4,10,0,0,1,10,1,"['MOVIE_NAME', 'Award_status', 'Feauture']",26

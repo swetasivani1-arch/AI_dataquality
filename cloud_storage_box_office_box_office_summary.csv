@@ -1,0 +1,2 @@
+table_name,total_rows,total_columns,completeness_violations,uniqueness_violations,datatype_violations,categorical_skew_violations,special_char_violations,casing_violations,regex_anomaly_violations,affected_columns,total_violations
+box_office,28,5,0,0,3,0,0,28,27,"['box_office_us_canada', 'box_office_worldwide', 'box_office_other', 'film', 'budget']",58
