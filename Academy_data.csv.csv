@@ -1,0 +1,110 @@
+MOVIE_NAME,Feauture,Award_status
+Elemental,Adapted Screenplay,Ineligible
+cars,Original Song,Nominated
+Toy Story,Animated Feature,Award not yet introduced
+A Bug's Life,Animated Feature,Award not yet introduced
+Toy Story 2,Animated Feature,Award not yet introduced
+Toy Story,Adapted Screenplay,Ineligible
+A Bug's Life,Adapted Screenplay,Ineligible
+"Monsters, Inc.",Adapted Screenplay,Ineligible
+Finding Nemo,Adapted Screenplay,Ineligible
+The Incredibles,Adapted Screenplay,Ineligible
+Cars,Adapted Screenplay,Ineligible
+Ratatouille,Adapted Screenplay,Ineligible
+WALL-E,Adapted Screenplay,Ineligible
+Up,Adapted Screenplay,Ineligible
+Brave,Adapted Screenplay,Ineligible
+Inside Out,Adapted Screenplay,Ineligible
+The Good Dinosaur,Adapted Screenplay,Ineligible
+Coco,Adapted Screenplay,Ineligible
+Onward,Adapted Screenplay,Ineligible
+Soul,Adapted Screenplay,Ineligible
+Luca,Adapted Screenplay,Ineligible
+Turning Red,Adapted Screenplay,Ineligible
+Elemental,Adapted Screenplay,Ineligible
+Toy Story 2,Original Screenplay,Ineligible
+Toy Story 3,Original Screenplay,Ineligible
+Cars 2,Original Screenplay,Ineligible
+Monsters University,Original Screenplay,Ineligible
+Finding Dory,Original Screenplay,Ineligible
+Cars 3,Original Screenplay,Ineligible
+Incredibles 2,Original Screenplay,Ineligible
+Toy Story 4,Original Screenplay,Ineligible
+Lightyear,Original Screenplay,Ineligible
+Inside Out 2,Original Screenplay,Ineligible
+Toy Story 3,Adapted Screenplay,Nominated
+"Monsters, Inc.",Animated Feature,Nominated
+Cars,Animated Feature,Nominated
+Incredibles 2,Animated Feature,Nominated
+Onward,Animated Feature,Nominated
+Luca,Animated Feature,Nominated
+Turning Red,Animated Feature,Nominated
+Elemental,Animated Feature,Nominated
+Inside Out 2,Animated Feature,Nominated
+Up,Best Picture,Nominated
+Toy Story 3,Best Picture,Nominated
+Toy Story,Original Score,Nominated
+A Bug's Life,Original Score,Nominated
+"Monsters, Inc.",Original Score,Nominated
+Finding Nemo,Original Score,Nominated
+Ratatouille,Original Score,Nominated
+WALL-E,Original Score,Nominated
+Toy Story,Original Screenplay,Nominated
+Finding Nemo,Original Screenplay,Nominated
+The Incredibles,Original Screenplay,Nominated
+Ratatouille,Original Screenplay,Nominated
+WALL-E,Original Screenplay,Nominated
+Up,Original Screenplay,Nominated
+Inside Out,Original Screenplay,Nominated
+Toy Story,Original Song,Nominated
+Toy Story 2,Original Song,Nominated
+Cars,Original Song,Nominated
+WALL-E,Original Song,Nominated
+Toy Story 4,Original Song,Nominated
+"Monsters, Inc.",Sound Editing,Nominated
+Finding Nemo,Sound Editing,Nominated
+Ratatouille,Sound Editing,Nominated
+WALL-E,Sound Editing,Nominated
+Up,Sound Editing,Nominated
+Toy Story 3,Sound Editing,Nominated
+Soul,Sound Editing,Nominated
+The Incredibles,Sound Mixing,Nominated
+Ratatouille,Sound Mixing,Nominated
+WALL-E,Sound Mixing,Nominated
+Soul,Sound Mixing,Nominated
+Finding Nemo,Animated Feature,Won
+The Incredibles,Animated Feature,Won
+Ratatouille,Animated Feature,Won
+WALL-E,Animated Feature,Won
+Up,Animated Feature,Won
+Toy Story 3,Animated Feature,Won
+Brave,Animated Feature,Won
+Inside Out,Animated Feature,Won
+Coco,Animated Feature,Won
+Toy Story 4,Animated Feature,Won
+Soul,Animated Feature,Won
+Up,Original Score,Won
+Soul,Original Score,Won
+"Monsters, Inc.",Original Song,Won
+Toy Story 3,Original Song,Won
+Coco,Original Song,Won
+The Incredibles,Sound Editing,Won
+Toy Story,Other,Won Special Achievement
+film,award_type,status
+Toy Story 2,Original Screenplay,Ineligible
+Parch@d,Original Screenplay,Nominated
+Toy Story,Animated Feature,Award not yet introduced
+Toy Story,Animated Feature,Award not yet introduced
+Elemental,Adapted Screenplay,Ineligible
+Up,Adapted Screenplay,NULL
+123,Original Song,Nominated
+cars,Original Song,Nominated
+The Incredibles,,Nominated
+,Original Song,Nominated
+TOY STORY,animated feature,award not yet introduced
+Wall-E,Original Script,✨Winner✨
+,,
+Interstellar,,
+AVATAR*,Original Song,Nominated
+Spider-Man 3,animated-feature,Nominated
+Titanic,Best Picture,Winner
