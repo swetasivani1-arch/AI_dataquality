@@ -1,0 +1,64 @@
+Only return Python code (no explanation).
+Generate Python code that:
+- Connects to BigQuery using this value: applied-abbey-464811-v0.AI_Sample_data
+- Lists all tables in the dataset
+- For each table:
+    - Loads the data into a Pandas DataFrame
+    - Performs data quality checks:
+        - Completeness: Identify rows with null values
+            - Add `violation_reason` (e.g., "One or more columns have null values")
+            - Add `recommendation` (e.g., "Investigate source system and consider imputing or removing nulls")
+            - Visualization: Bar plot of null count per column
+        - Uniqueness: Identify duplicate rows
+            - Add `violation_reason` (e.g., "Duplicate entries found violating primary key rules")
+            - Add `recommendation` (e.g., "Ensure uniqueness constraints are applied during ingestion")
+            - Visualization: Pie chart of duplicate vs unique rows
+        - Data type consistency: Flag columns with mismatched types
+            - Add `violation_reason` (e.g., "Data types differ between source and inferred schema")
+            - Add `recommendation` (e.g., "Standardize type casting during ETL")
+            - Visualization: Heatmap comparing BigQuery vs Pandas data types
+        - Categorical columns: Detect suspicious distributions
+            - Add `violation_reason` (e.g., "Single value dominates more than 95% of entries")
+            - Add `recommendation` (e.g., "Check for data skew or hardcoded defaults")
+            - Visualization: Countplot of value frequency for skewed columns
+        - Pattern & Format Checks:
+            - Special characters (e.g., symbols in MOVIE_NAME)
+                - Add `violation_reason` (e.g., "Unexpected symbol detected in text field")
+                - Add `recommendation` (e.g., "Use regex sanitation on ingestion")
+                - Visualization: Bar chart of special character violations by column
+            - Inconsistent casing (e.g., all lowercase)
+                - Add `violation_reason` (e.g., "Inconsistent casing may reduce lookup performance")
+                - Add `recommendation` (e.g., "Normalize casing using `.title()` or `.upper()`")
+                - Visualization: Histogram of casing formats (lower, upper, title)
+            - Regex anomalies (e.g., numeric-only or emoji usage)
+                - Add `violation_reason` (e.g., "Detected abnormal pattern using regex filter")
+                - Add `recommendation` (e.g., "Update validation rules to reject suspicious values")
+                - Visualization: Count of pattern violations per column
+
+    - Display each section of the report using IPython.display.Markdown
+    - For every quality check, print the violating rows with these columns:
+        - Original row data
+        - Violation_Type
+        - Violation_Reason
+        - Recommendation
+
+    - Generate violation-related visualizations using Matplotlib:
+        - Save each visualization temporarily as a PNG file
+        - Combine all visualizations into a grouped report per table using:
+            - PDF with multiple pages via `matplotlib.backends.backend_pdf.PdfPages`
+            - Save final file as `<table_name>_report.pdf`
+
+- After printing error records:
+    - GCS path is gs://data-violation-records
+    - Create a folder in the bucket: cloud_storage/<table_name>/
+    - Inside this folder, upload:
+        - Violating rows CSV named `<table_name>_violations.csv`
+        - Summary CSV named `<table_name>_summary.csv`
+            - Summary should contain table name, number of violations by type, columns affected
+        - Grouped PDF report named `<table_name>_report.pdf`
+
+    - Ensure correct parsing of bucket name and object prefix from the GCS URI
+
+Ensure all Markdown strings are properly enclosed and the code runs smoothly inside a Vertex AI notebook.
+
+**Please generate only valid Python code. Make sure all string literals are properly closed and formatted. Avoid unterminated strings, especially inside f-strings. Wrap the code in triple backticks (```python ... ```).**
